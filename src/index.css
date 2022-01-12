@@ -57,6 +57,9 @@ body {
 
 .p-home {
   margin: 2rem;
+  width: 70%;
+  text-align: center;
+  align-self: center;
 }
 
 code {
