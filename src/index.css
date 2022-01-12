@@ -6,6 +6,7 @@
   --science: rgb(0, 151, 106);
   --engineering: #f2c300;
   --black: #000;
+  --max-width: 600px;
 }
 
 * {
@@ -21,28 +22,28 @@ body {
   font-size: 1.75rem;
   letter-spacing: 0.1rem;
   text-align: center;
+  background: var(--black) url(./img/stars.png) repeat top center;
 }
 
-.h1-title {
+.h1-home {
   border-bottom-width: 3rem;
   border-bottom-color: var(--science);
   border-bottom-style: solid;
-  padding: 1rem;
-  margin: 1rem;
   border-top-color: var(--command);
   border-top-style: solid;
   border-top-width: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .container {
-  font-family: "Play", sans-serif;
+  max-width: var(--max-width);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   z-index: 3;
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 35%;
   margin: auto;
 }
 .question-container {
@@ -53,7 +54,8 @@ body {
   margin: 1rem;
 }
 
-.p-title {
+.p-home {
+  margin: 2rem;
 }
 
 code {
@@ -77,18 +79,18 @@ code {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
   display: block;
 }
 
 .stars {
   background: var(--black) url(./img/stars.png) repeat top center;
   z-index: 0;
+  height: 1000px;
 }
 
 .twinkling {
   background: url(./img/twinkling.png) repeat top center;
   z-index: 1;
   animation: move-twink-back 200s linear infinite;
+  height: 1000px;
 }

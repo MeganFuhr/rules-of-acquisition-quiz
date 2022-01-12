@@ -5,25 +5,25 @@ import rightAnswers from "./Data/rightAnswers";
 
 function App() {
   return (
-    <main>
+    <>
       <div className="stars"></div>
       <div className="twinkling"></div>
       <section className="container">
-        <h1 className="h1-title">Star Trek</h1>
+        <h1 className="h1-home">
+          How well do you know the Rules of Acquisition?
+        </h1>
 
-        <p className="p-title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          enim nostrum quisquam repellendus officiis unde nesciunt accusamus
-          molestiae illo asperiores dolorem modi, quas corporis hic fuga commodi
-          ad quos vel? Excepturi quibusdam esse reprehenderit illum impedit
-          beatae dolores quae facilis perferendis iste officia sint porro nulla
-          eaque, iure mollitia voluptates blanditiis quam labore delectus optio
-          ipsum consectetur. Ab fugit porro sunt neque voluptas deleniti dolorem
-          quod repellat, ratione tenetur.
+        <p className="p-home">
+          Do you have what it takes to be a Ferengi? To skillfully navigate the
+          material continuum? To become the next GRAND NAGUS?
+          <br />
+          <br />
+          <br />
+          Prove your worth below.
         </p>
-        <Question />
       </section>
-    </main>
+      <Question />
+    </>
   );
 }
 
