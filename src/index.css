@@ -1,13 +1,99 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+:root {
+  --white: #fff;
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+
+body {
+  font-family: "Play", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--white);
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.h1-title {
+  border-bottom-width: 3rem;
+  border-bottom-color: rgb(0, 151, 106);
+  border-bottom-style: solid;
+  padding: 1rem;
+  margin: 1rem;
+  border-top-color: red;
+  border-top-style: solid;
+  border-top-width: 3rem;
+}
+
+.container {
+  font-family: "Play", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 35%;
+  margin: auto;
+}
+.question-container {
+  border-top-width: 3rem;
+  border-top-color: rgb(190, 172, 2);
+  border-top-style: solid;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.p-title {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(./img/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(./img/twinkling.png) repeat top center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
 }

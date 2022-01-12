@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./index.css";
+import Question from "./Components/Question";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <main>
+      <div className="stars"></div>
+      <div className="twinkling"></div>
+      <section className="container">
+        <h1 className="h1-title">Star Trek</h1>
+
+        <p className="p-title">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          enim nostrum quisquam repellendus officiis unde nesciunt accusamus
+          molestiae illo asperiores dolorem modi, quas corporis hic fuga commodi
+          ad quos vel? Excepturi quibusdam esse reprehenderit illum impedit
+          beatae dolores quae facilis perferendis iste officia sint porro nulla
+          eaque, iure mollitia voluptates blanditiis quam labore delectus optio
+          ipsum consectetur. Ab fugit porro sunt neque voluptas deleniti dolorem
+          quod repellat, ratione tenetur.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Question />
+      </section>
+    </main>
   );
 }
 
