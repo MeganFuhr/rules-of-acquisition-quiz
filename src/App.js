@@ -5,7 +5,7 @@ import rightAnswers from "./Data/rightAnswers";
 
 function App() {
   return (
-    <>
+    <main>
       <div className="stars"></div>
       <div className="twinkling"></div>
       <section className="container">
@@ -15,7 +15,8 @@ function App() {
 
         <p className="p-home">
           Do you have what it takes to be a Ferengi? To skillfully navigate the
-          material continuum? To become the next GRAND NAGUS?
+          material continuum? To become the next
+          <span className="emphasis"> GRAND NAGUS</span>?
           <br />
           <br />
           <br />
@@ -23,7 +24,7 @@ function App() {
         </p>
       </section>
       <Question />
-    </>
+    </main>
   );
 }
 

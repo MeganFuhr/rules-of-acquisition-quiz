@@ -7,6 +7,7 @@
   --engineering: #f2c300;
   --black: #000;
   --max-width: 600px;
+  --fw-bold: 1000;
 }
 
 * {
@@ -93,4 +94,8 @@ code {
   z-index: 1;
   animation: move-twink-back 200s linear infinite;
   height: 1000px;
+}
+
+.emphasis {
+  font-weight: var(--fw-bold);
 }
