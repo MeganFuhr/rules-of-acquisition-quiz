@@ -1,5 +1,7 @@
 import "./index.css";
 import Question from "./Components/Question";
+import wrongAnswers from "./Data/wrongAnswers";
+import rightAnswers from "./Data/rightAnswers";
 
 function App() {
   return (
