@@ -29,13 +29,18 @@ export default function Question() {
 
     //validate 3 wrong answers and 1 right answer
     console.log(question);
+    return question;
   }
 
-  createRandomQuestion(wrong, right);
+  const question = createRandomQuestion(wrong, right);
 
   return (
     <section className="container">
-      <div className="question-container">Question goes here.</div>
+      <div className="question-container">
+        {question.map((item) => {
+          return <div>{item.answer}</div>;
+        })}
+      </div>
     </section>
   );
 }
