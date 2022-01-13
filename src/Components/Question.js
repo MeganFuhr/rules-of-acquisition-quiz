@@ -38,7 +38,7 @@ export default function Question() {
     <section className="container">
       <div className="question-container">
         {question.map((item) => {
-          return <div>{item.answer}</div>;
+          return <div key={item.id}>{item.answer}</div>;
         })}
       </div>
     </section>
