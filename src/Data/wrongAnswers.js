@@ -1,4 +1,4 @@
-export const wrongAnswers = [
+const wrongAnswers = [
   {
     id: "61dde88a19c0c8302259ff6d",
     answer:
@@ -228,3 +228,4 @@ export const wrongAnswers = [
     isCorrect: false,
   },
 ];
+export default wrongAnswers;

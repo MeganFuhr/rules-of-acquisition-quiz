@@ -1,4 +1,4 @@
-export const rightAnswers = [
+const rightAnswers = [
   {
     id: "0",
     rule: "What the Nagus wants, we acquire.",
@@ -927,3 +927,4 @@ export const rightAnswers = [
     source: 'STO mission: "Echoes of Light"',
   },
 ];
+export default rightAnswers;
