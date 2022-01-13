@@ -15,7 +15,7 @@ function App() {
 
         <p className="p-home">
           Do you have what it takes to be a Ferengi? To skillfully navigate the
-          material continuum? To become the next
+          Great Material Continuum? To become the next
           <span className="emphasis"> GRAND NAGUS</span>?
           <br />
           <br />
