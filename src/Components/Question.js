@@ -18,6 +18,10 @@ export default function Question() {
     <section className="container">
       <div className="question-container">
         <div className="display-score">
+          <h4 className="display-question-count-left">Question 1 of 10</h4>
+          <h4 className="display-score-right">Score: 10</h4>
+        </div>
+        <div className="display-latinum">
           <IncorrectScore />
           <IncorrectScore />
           <CorrectScore />
