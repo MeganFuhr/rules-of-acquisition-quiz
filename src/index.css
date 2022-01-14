@@ -6,8 +6,12 @@
   --science: rgb(0, 151, 106);
   --engineering: #f2c300;
   --black: #000;
-  --max-width: 600px;
+  --bg-button: rgb(82, 77, 77);
+  --button-hover: #5865f2;
+  --rank-height: 2rem;
+  --max-width: 800px;
   --fw-bold: 1000;
+  --font-family: "Play", sans-serif;
 }
 
 * {
@@ -17,8 +21,6 @@
 
 body {
   font-family: "Play", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: var(--white);
   font-size: 1.75rem;
   letter-spacing: 0.1rem;
@@ -27,12 +29,12 @@ body {
 }
 
 .h1-home {
-  border-bottom-width: 3rem;
+  border-bottom-width: var(--rank-height);
   border-bottom-color: var(--science);
   border-bottom-style: solid;
   border-top-color: var(--command);
   border-top-style: solid;
-  border-top-width: 3rem;
+  border-top-width: var(--rank-height);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -46,7 +48,7 @@ body {
   margin: auto;
 }
 .question-container {
-  border-top-width: 3rem;
+  border-top-width: var(--rank-height);
   border-top-color: var(--engineering);
   border-top-style: solid;
   padding: 1rem;
@@ -119,6 +121,17 @@ code {
   );
 }
 
+.buster {
+  font-size: 2rem;
+}
+
+.display-latinum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
 .display-score {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -139,11 +152,26 @@ code {
   padding-top: 1.5rem;
 }
 
-.buster {
-  font-size: 2rem;
+.question-card {
+  background-color: rgba(117, 115, 115, 0.2);
+  border-radius: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.question-answer-button {
+  width: 90%;
+  height: 8rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-button);
+  margin: 0.25rem;
+  color: var(--white);
+  padding: 0 1rem 0 1rem;
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  text-align: left;
+  border: 12px solid transparent;
 }
 
-.display-latinum {
-  display: flex;
-  padding-bottom: 1.5rem;
+.question-answer-button:hover {
+  border-color: var(--button-hover);
 }

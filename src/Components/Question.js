@@ -1,19 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import wrongAnswers from "../Data/wrongAnswers";
 import rightAnswers from "../Data/rightAnswers";
 import { createRandomQuestion } from "../Functions/Functions";
 import CorrectScore from "./CorrectScore";
 import IncorrectScore from "./IncorrectScore";
 
-const questionToDisplay = createRandomQuestion(wrongAnswers, rightAnswers);
-
-const ruleNumber = questionToDisplay.filter((item) => {
-  return item.isCorrect === true;
-});
-
-console.log("Correct Rule", ruleNumber);
-
 export default function Question() {
+  const questionToDisplay = createRandomQuestion(wrongAnswers, rightAnswers);
+
+  const ruleNumber = questionToDisplay.filter((item) => {
+    return item.isCorrect === true;
+  });
+
+  const [currentQuestion, setCurrentQuestion] = useState(questionToDisplay);
   return (
     <section className="container">
       <div className="question-container">
@@ -33,10 +32,20 @@ export default function Question() {
           <IncorrectScore />
           <CorrectScore />
         </div>
-        <h2>Rule {ruleNumber[0].id}</h2>
-        {questionToDisplay.map((item) => {
-          return <p key={item.id}>{item.answer}</p>;
-        })}
+        <div className="question-card">
+          <h2>Rule {ruleNumber[0].id}</h2>
+          {currentQuestion.map((item) => {
+            return (
+              <button
+                className="question-answer-button"
+                key={item.id}
+                onClick={() => setCurrentQuestion}
+              >
+                {item.answer}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

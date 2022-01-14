@@ -17,7 +17,6 @@ function App() {
           <span className="emphasis"> GRAND NAGUS</span>?
           <br />
           <br />
-          <br />
           Prove your worth below.
         </p>
       </section>
