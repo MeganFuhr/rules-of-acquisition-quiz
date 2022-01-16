@@ -163,7 +163,7 @@ code {
 .question-answer-button {
   width: 90%;
   height: 8rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: var(--bg-button);
   margin: 0.25rem;
   color: var(--white);
