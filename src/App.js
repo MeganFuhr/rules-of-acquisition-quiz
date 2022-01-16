@@ -12,12 +12,13 @@ function App() {
         </h1>
 
         <p className="p-home">
-          Do you have what it takes to be a Ferengi? To skillfully navigate the
-          Great Material Continuum? To become the next
+          Do you have what it takes to be a Ferengi? To navigate the Great
+          Material Continuum with skill and grace? To become the next
           <span className="emphasis"> GRAND NAGUS</span>?
           <br />
           <br />
-          Prove your worth below.
+          How many bricks of
+          <span className="emphasis"> gold-pressed latinum</span> can you earn?
         </p>
       </section>
       <Question />
