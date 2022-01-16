@@ -24,7 +24,9 @@ export default function Question() {
     if (questionCount > 9) {
       alert("GAME OVER");
       setScore(0);
-      setQuestionCount(0);
+      setQuestionCount(1);
+      setLatinumDisplay([]);
+      return;
     }
     //update the question count
     setQuestionCount((prev) => prev + 1);
