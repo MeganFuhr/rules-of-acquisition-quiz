@@ -17,7 +17,7 @@ function App() {
           <span className="emphasis"> GRAND NAGUS</span>?
           <br />
           <br />
-          How many bricks of
+          How many bars of
           <span className="emphasis"> gold-pressed latinum</span> can you earn?
         </p>
       </section>
