@@ -1,5 +1,6 @@
 import "./index.css";
 import Question from "./Components/Question";
+import EndGame from "./Components/EndGame";
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
           <span className="emphasis"> gold-pressed latinum</span> can you earn?
         </p>
       </section>
-      <Question />
+      <section className="container">
+        <Question />
+      </section>
     </main>
   );
 }

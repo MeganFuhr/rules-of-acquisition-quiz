@@ -22,7 +22,7 @@ export default function Question() {
     console.log("Inside handleAnswer function.");
     //check if question limit of 10 is reached - if so, display score or something. offer retry.
     if (questionCount > 9) {
-      alert("GAME OVER");
+      alert("Game Over");
       setScore(0);
       setQuestionCount(1);
       setLatinumDisplay([]);
@@ -46,7 +46,7 @@ export default function Question() {
   };
 
   return (
-    <section className="container">
+    <>
       <div className="question-container">
         <div className="display-score">
           <h4 className="display-question-count-left">
@@ -70,6 +70,6 @@ export default function Question() {
           })}
         </div>
       </div>
-    </section>
+    </>
   );
 }

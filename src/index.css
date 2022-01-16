@@ -37,6 +37,7 @@ body {
   border-top-width: var(--rank-height);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 .container {
@@ -52,6 +53,7 @@ body {
   border-top-color: var(--engineering);
   border-top-style: solid;
   padding: 1rem;
+  border-radius: 1rem;
   margin: 1rem;
 }
 
@@ -176,4 +178,44 @@ code {
 
 .question-answer-button:hover {
   border-color: var(--button-hover);
+}
+
+.h1-gameover {
+  width: 50%;
+  margin: auto;
+}
+
+.span-blink-score-gameover {
+  animation: blinker 1s linear infinite;
+  color: var(--engineering);
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.div-gameover {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgba(117, 115, 115, 0.2);
+  border-radius: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  width: 92%;
+  border-top-width: var(--rank-height);
+  border-top-color: var(--engineering);
+  border-top-style: solid;
+}
+
+.test-container {
+  max-width: var(--max-width);
+  /* position: relative; */
+  /* z-index: 13; */
+  border-bottom-color: var(--science);
+  border-top-style: solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
 }
