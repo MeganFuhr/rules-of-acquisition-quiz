@@ -5,7 +5,6 @@ import EndGame from "./Components/EndGame";
 function App() {
   return (
     <main>
-      <div className="stars"></div>
       <div className="twinkling"></div>
       <section className="container">
         <h1 className="h1-home">
