@@ -190,7 +190,7 @@ code {
   border-radius: 1rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  width: 92%;
+  width: 100%;
   border-top-width: var(--rank-height);
   border-top-color: var(--engineering);
   border-top-style: solid;
@@ -213,4 +213,27 @@ code {
 
 .command {
   background-color: var(--command);
+}
+
+.container-game-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.game-buttons {
+  width: 30%;
+  border-radius: 1rem;
+  background-color: var(--bg-button);
+  margin: 0.25rem;
+  color: var(--white);
+  padding: 0 1rem 0 1rem;
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  text-align: center;
+  border: 10px solid transparent;
+}
+
+.game-buttons:hover {
+  border-color: var(--button-hover);
 }

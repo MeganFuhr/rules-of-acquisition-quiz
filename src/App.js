@@ -24,7 +24,8 @@ function App() {
         </p>
       </section>
       <section className="container">
-        <Question />
+        {/* <Question /> */}
+        <EndGame />
       </section>
     </main>
   );

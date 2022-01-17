@@ -63,6 +63,7 @@ export default function Question() {
                 className="question-answer-button"
                 key={item.id}
                 onClick={() => handleAnswer(item)}
+                aria-label={item.answer}
               >
                 {item.answer}
               </button>
