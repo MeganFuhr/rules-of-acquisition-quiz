@@ -203,6 +203,10 @@ code {
   margin-bottom: 1rem;
 }
 
+.div-bar-flip-vertically {
+  transform: scaleY(-1);
+}
+
 .engineering {
   background-color: var(--engineering);
 }

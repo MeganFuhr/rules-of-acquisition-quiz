@@ -10,7 +10,7 @@ function App() {
         <h1 className="h1-home">
           <div className="div-bar command"></div>
           How well do you know the Rules of Acquisition?
-          <div className="div-bar science"></div>
+          <div className="div-bar science div-bar-flip-vertically"></div>
         </h1>
 
         <p className="p-home">
