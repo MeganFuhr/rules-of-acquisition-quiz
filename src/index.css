@@ -29,12 +29,6 @@ body {
 }
 
 .h1-home {
-  border-bottom-width: var(--rank-height);
-  border-bottom-color: var(--science);
-  border-bottom-style: solid;
-  border-top-color: var(--command);
-  border-top-style: solid;
-  border-top-width: var(--rank-height);
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 1rem;
@@ -209,13 +203,20 @@ code {
   border-top-style: solid;
 }
 
-.test-container {
-  max-width: var(--max-width);
-  /* position: relative; */
-  /* z-index: 13; */
-  border-bottom-color: var(--science);
-  border-top-style: solid;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem;
+.div-bar {
+  height: 2rem;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+}
+
+.engineering {
+  background-color: var(--engineering);
+}
+
+.science {
+  background-color: var(--science);
+}
+
+.command {
+  background-color: var(--command);
 }

@@ -9,7 +9,9 @@ function App() {
       <div className="twinkling"></div>
       <section className="container">
         <h1 className="h1-home">
+          <div className="div-bar command"></div>
           How well do you know the Rules of Acquisition?
+          <div className="div-bar science"></div>
         </h1>
 
         <p className="p-home">
