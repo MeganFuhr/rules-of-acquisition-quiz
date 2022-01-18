@@ -49,7 +49,13 @@ function Get-HTMLTableData {
 $res = Invoke-WebRequest "https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition"
 
 #update table headers to lowercase
-$data = Get-HTMLTableData $res -TableNumber 0 | Select @{ name = "id"; e = { [int]$_.number } }, @{ name = "answer"; e = { $_.rule } }, @{ name = "isCorrect"; e = { $true } }, @{ name = "source"; e = { $_.source } }
+$data = Get-HTMLTableData $res -TableNumber 0 | Select @{ name = "ruleNumber"; e = { [int]$_.number } }, @{ name = "answer"; e = { $_.rule } }, @{ name = "isCorrect"; e = { $true } }, @{ name = "source"; e = { $_.source } }
+
+$i = 0
+foreach ($item in $data) {
+    $item | Add-Member -NotePropertyName id -NotePropertyValue $i
+    $i++
+}
 
 $data | ConvertTo-Json | Set-Clipboard
 
