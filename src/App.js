@@ -1,6 +1,6 @@
 import "./index.css";
 import Question from "./Components/Question";
-import EndGame from "./Components/EndGame";
+import GameOver from "./Components/GameOver";
 
 function App() {
   return (
@@ -8,9 +8,9 @@ function App() {
       <div className="twinkling"></div>
       <section className="container">
         <h1 className="h1-home">
-          <div className="div-bar command"></div>
+          <div className="div-bar command div-bar-command"></div>
           How well do you know the Rules of Acquisition?
-          <div className="div-bar science div-bar-flip-vertically"></div>
+          <div className="div-bar science div-bar-science"></div>
         </h1>
 
         <p className="p-home">
@@ -24,9 +24,11 @@ function App() {
         </p>
       </section>
       <section className="container">
+        <div className="div-bar engineering div-bar-engineering"></div>
         {/* <Question /> */}
-        <EndGame />
+        <GameOver />
       </section>
+      <span>🟨❌</span>
     </main>
   );
 }
