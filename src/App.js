@@ -14,7 +14,6 @@ function App() {
           How well do you know the Rules of Acquisition?
           <div className="div-bar science div-bar-science"></div>
         </h1>
-        <span>🟨❌</span>
         <p className="p-home">
           Do you have what it takes to be a Ferengi? To navigate the Great
           Material Continuum with skill and grace? To become the next
