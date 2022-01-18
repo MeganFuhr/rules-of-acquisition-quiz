@@ -116,7 +116,7 @@ const rightAnswers = [
   {
     ruleNumber: 17,
     answer:
-      "A contract is a contract is a contract... but only between Ferengi",
+      "A contract is a contract is a contract... but only between Ferengi.",
     isCorrect: true,
     source: '"Body Parts" (DS9 episode)',
     id: 16,
@@ -180,7 +180,7 @@ const rightAnswers = [
   },
   {
     ruleNumber: 30,
-    answer: '"Confidentiality equals profit."',
+    answer: "Confidentiality equals profit.",
     isCorrect: true,
     source: "The Badlands, Part IV (DS9 novel)",
     id: 25,
@@ -293,8 +293,7 @@ const rightAnswers = [
   },
   {
     ruleNumber: 54,
-    answer:
-      'Rate divided by time equals profit. (Also known as "The Velocity of Wealth.")',
+    answer: "Rate divided by time equals profit.",
     isCorrect: true,
     source: "Raise the Dawn (Typhon Pact novel)",
     id: 41,
@@ -350,7 +349,7 @@ const rightAnswers = [
   },
   {
     ruleNumber: 65,
-    answer: "Win or lose, there\u0027s always Hupyrian beetle snuff",
+    answer: "Win or lose, there\u0027s always Hupyrian beetle snuff.",
     isCorrect: true,
     source: "The Ferengi Rules of Acquisition (DS9 reference book)",
     id: 49,
@@ -459,7 +458,7 @@ const rightAnswers = [
   {
     ruleNumber: 89,
     answer:
-      "[It is] better to lose some profit and live than lose all profit and die.",
+      "It is better to lose some profit and live than lose all profit and die.",
     isCorrect: true,
     source: '"Best Tools Available" (DS9 short story)',
     id: 64,
@@ -620,7 +619,7 @@ const rightAnswers = [
   },
   {
     ruleNumber: 122,
-    answer: "Never Sleep with the bosses sister",
+    answer: "Never sleep with the bosses sister.",
     isCorrect: true,
     source: '"Playing God" (DS9 episode)',
     id: 87,
@@ -838,7 +837,7 @@ const rightAnswers = [
   },
   {
     ruleNumber: 214,
-    answer: "Never begin a (business) negotiation on an empty stomach.",
+    answer: "Never begin a negotiation on an empty stomach.",
     isCorrect: true,
     source: 'DS9 episode: "The Maquis, Part I"',
     id: 117,
@@ -945,7 +944,7 @@ const rightAnswers = [
   {
     ruleNumber: 248,
     answer:
-      "The definition of insanity is trying the same failed scheme \u0026 expecting different results",
+      "The definition of insanity is trying the same failed scheme and expecting different results.",
     isCorrect: true,
     source:
       "Department of Temporal Investigations 3: Shield of the Gods (novel) pg 11",
