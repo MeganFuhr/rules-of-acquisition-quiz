@@ -27,32 +27,44 @@ function shuffle(array) {
   return array;
 }
 
-//create the random question
-function createRandomQuestion(wrongList, rightList) {
-  const wrongCollectionIndex = [];
+function createCollection(list, num) {
+  const collectionIndex = [];
   let i = 0;
   do {
-    let currentValue = getRandomNumber(0, wrongList.length - 1);
+    let currentValue = getRandomNumber(0, list.length - 1);
 
-    if (wrongCollectionIndex.includes(currentValue)) {
+    if (collectionIndex.includes(currentValue)) {
       continue;
     } else {
-      wrongCollectionIndex.push(currentValue);
+      collectionIndex.push(currentValue);
       i++;
     }
-  } while (i < 3);
+  } while (i < num);
 
   //get those wrong answers in an array
-  const question = wrongCollectionIndex.map((item) => {
-    return wrongList[item];
+  const collection = collectionIndex.map((item) => {
+    return list[item];
   });
-
-  //add that right answer to the question object
-  question.push(rightList[getRandomNumber(0, rightList.length)]);
-
-  //shuffle the array
-  const newQuestion = shuffle(question);
-  return newQuestion;
+  return collection;
 }
 
-export { createRandomQuestion };
+function createQuestionStack(wrong, right) {
+  const questionStack = [];
+  let a = 0;
+  let b = 1;
+  let c = 2;
+  let i = 0;
+  //build 10 questions
+  while (i < 10) {
+    //build wrong answers
+    questionStack.push([wrong[a], wrong[b], wrong[c], right[i]]);
+    shuffle(questionStack[i]);
+    a = a + 3; //increase index by 1
+    b = b + 3; //increase index by 1
+    c = c + 3; //increase index by 1
+    i++; //increase count by 1
+  }
+  return questionStack;
+}
+
+export { createQuestionStack, createCollection };

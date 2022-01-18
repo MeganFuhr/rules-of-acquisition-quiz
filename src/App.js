@@ -1,8 +1,10 @@
 import "./index.css";
 import Question from "./Components/Question";
 import GameOver from "./Components/GameOver";
+import { useGlobalContext } from "./Context";
 
 function App() {
+  const { gameOver } = useGlobalContext();
   return (
     <main>
       <div className="twinkling"></div>
@@ -12,7 +14,7 @@ function App() {
           How well do you know the Rules of Acquisition?
           <div className="div-bar science div-bar-science"></div>
         </h1>
-
+        <span>🟨❌</span>
         <p className="p-home">
           Do you have what it takes to be a Ferengi? To navigate the Great
           Material Continuum with skill and grace? To become the next
@@ -25,10 +27,8 @@ function App() {
       </section>
       <section className="container">
         <div className="div-bar engineering div-bar-engineering"></div>
-        {/* <Question /> */}
-        <GameOver />
+        {gameOver ? <GameOver /> : <Question />}
       </section>
-      <span>🟨❌</span>
     </main>
   );
 }
