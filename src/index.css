@@ -136,7 +136,7 @@ body {
 
 .p-home {
   margin: 2rem;
-  width: 70%;
+  width: 100%;
   text-align: center;
   align-self: center;
 }
@@ -243,7 +243,7 @@ body {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   width: 100%;
-  height: 617px;
+  height: 681px;
 }
 
 .container-game-buttons {

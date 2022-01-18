@@ -44,7 +44,7 @@ export default function Question() {
     //if isCorrect: true, add score and display latinum
     if (answer.isCorrect) {
       //update score
-      setScore((prev) => prev + 10);
+      setScore((prev) => prev + 1);
       //update latinum display
       setLatinumDisplay([...latinumDisplay, <CorrectScore />]);
       setLatinumResults([...latinumResults, latinum]);

@@ -13,14 +13,13 @@ export default function EndGame() {
   } = useGlobalContext();
 
   function updateClipboard(num, results) {
-    const score = num / 10;
-    const display = `${score}/10 \n${results.join("")}`;
+    const display = `${num}/10 \n${results.join("")}`;
     navigator.clipboard.writeText(display).then(
       function () {
-        console.log("Success!");
+        //TODO ...
       },
       function () {
-        console.log("Failed!");
+        console.log("Clipboard set failed!");
       }
     );
   }
@@ -36,8 +35,10 @@ export default function EndGame() {
       <Score />
       <div className="div-question container div-gameover container">
         <h1>Game Over !</h1>
-        <h2>Latinum Bars Acquired: </h2>
-        <h2 className="span-blink-score-gameover">{score / 10}</h2>
+        <h1>Latinum Bars Acquired: </h1>
+        <h1 className="span-blink-score-gameover" style={{ fontSize: "5rem" }}>
+          {score}
+        </h1>
         <div className="container-game-buttons">
           <button
             className="game-buttons"
