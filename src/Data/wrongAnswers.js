@@ -54,224 +54,195 @@ const wrongAnswers = [
   },
   {
     id: 510,
-    answer:
-      "cillum eu magna sit proident nulla cupidatat ullamco eu aute cillum excepteur sit consectetur quis",
+    answer: "You can only count on yourself.",
     isCorrect: false,
   },
   {
     id: 511,
-    answer:
-      "aute ea est in dolor ad aliqua incididunt est adipisicing ad dolor anim amet proident",
+    answer: "When all else fails, do it yourself.",
     isCorrect: false,
   },
   {
     id: 512,
-    answer:
-      "ea cillum irure incididunt ullamco elit sunt velit culpa Lorem eu commodo nisi proident minim",
+    answer: "You gotta go with what works.",
     isCorrect: false,
   },
   {
     id: 513,
-    answer:
-      "cupidatat irure do id ipsum duis sit enim nostrud qui fugiat ipsum nulla aute ea",
+    answer: "Life isn't always fair.",
     isCorrect: false,
   },
   {
     id: 514,
-    answer:
-      "aliquip ex veniam exercitation mollit magna nulla et ullamco commodo aliquip Lorem aliquip consectetur sit",
+    answer: "Always watch your back.",
     isCorrect: false,
   },
   {
     id: 515,
-    answer:
-      "ipsum qui tempor officia ad nisi anim dolor est cupidatat culpa ex minim mollit proident",
+    answer: "A couple of light years can't keep good friends apart.",
     isCorrect: false,
   },
   {
     id: 516,
-    answer:
-      "deserunt sint adipisicing aute qui exercitation enim Lorem commodo fugiat ea sint ea officia id",
+    answer: "Live long and prosper.",
     isCorrect: false,
   },
   {
     id: 517,
-    answer:
-      "laborum eu adipisicing est ea officia deserunt occaecat do aute aliqua qui sit nulla dolore",
+    answer: "Beam me up, Scotty.",
     isCorrect: false,
   },
   {
     id: 518,
-    answer:
-      "ullamco quis deserunt excepteur sint enim eiusmod irure eiusmod labore nisi voluptate magna irure veniam",
+    answer: "Make it so.",
     isCorrect: false,
   },
   {
     id: 519,
-    answer:
-      "eiusmod occaecat minim veniam aute dolore aute fugiat fugiat esse excepteur proident velit adipisicing quis",
+    answer: "Resistance is futile.",
     isCorrect: false,
   },
   {
     id: 520,
-    answer:
-      "proident in ad laboris ut consequat cillum culpa pariatur magna ex proident minim proident nulla",
+    answer: "Khaaaaannnn!",
     isCorrect: false,
   },
   {
     id: 521,
-    answer:
-      "dolore nisi quis amet nostrud esse reprehenderit quis esse ipsum et id ullamco voluptate qui",
+    answer: "Darmok and Jalad at Tanagra.",
     isCorrect: false,
   },
   {
     id: 522,
-    answer:
-      "officia magna reprehenderit proident qui ex aute cillum voluptate ut est velit pariatur incididunt mollit",
+    answer: "There are four lights!",
     isCorrect: false,
   },
   {
     id: 523,
-    answer:
-      "magna ex commodo quis velit minim dolore est incididunt aute veniam labore ad occaecat sint",
+    answer: "You will be assimilated.",
     isCorrect: false,
   },
   {
     id: 524,
-    answer:
-      "ex elit sint occaecat labore Lorem amet esse eiusmod aliqua deserunt laborum magna dolor ex",
+    answer: "Logic is the beginning of wisdom, not the end.",
     isCorrect: false,
   },
   {
     id: 525,
     answer:
-      "Lorem culpa adipisicing proident cillum tempor reprehenderit tempor nostrud tempor eu dolore pariatur sit sint",
+      "Live now; make now always the most precious time. Now will never come again.",
     isCorrect: false,
   },
   {
     id: 526,
-    answer:
-      "aute et commodo in esse voluptate commodo laboris dolor ea veniam irure elit reprehenderit reprehenderit",
+    answer: "Respect is earned, not bestowed.",
     isCorrect: false,
   },
   {
     id: 527,
-    answer:
-      "mollit irure minim veniam id laborum adipisicing cupidatat laboris ullamco eiusmod Lorem id fugiat consequat",
+    answer: "I am not a merry man.",
     isCorrect: false,
   },
   {
     id: 528,
-    answer:
-      "proident consequat amet dolor consectetur dolore consequat dolore occaecat adipisicing cupidatat id aliquip enim ut",
+    answer: "Baby needs a new pair of shoes.",
     isCorrect: false,
   },
   {
     id: 529,
     answer:
-      "qui velit sint proident laborum est anim quis in id esse veniam officia irure sit",
+      "You can't just walk away from your responsibilities because you made a mistake.",
     isCorrect: false,
   },
   {
     id: 530,
-    answer:
-      "laboris labore reprehenderit sint fugiat ad aute enim elit labore duis elit culpa amet nisi",
+    answer: "One voice can be strong than a thousand voices.",
     isCorrect: false,
   },
   {
     id: 531,
     answer:
-      "commodo ullamco occaecat quis et ex quis ex sint adipisicing aute qui incididunt occaecat nostrud",
+      "When every logical course of action is exhausted, the only option that remains is inaction.",
     isCorrect: false,
   },
   {
     id: 532,
-    answer:
-      "voluptate enim non irure ullamco quis enim proident culpa dolore est minim velit nisi esse",
+    answer: "Without the darkness, how would we recognise the light?",
     isCorrect: false,
   },
   {
     id: 533,
     answer:
-      "esse est minim laboris Lorem exercitation irure consequat dolor et fugiat qui magna aute anim",
+      "We often fear what we don't understand. Our best defence is knowledge.",
     isCorrect: false,
   },
   {
     id: 534,
-    answer:
-      "deserunt aliquip est sint consectetur consectetur esse occaecat eiusmod mollit labore anim do ullamco exercitation",
+    answer: "I will not rest until I see you smile.",
     isCorrect: false,
   },
   {
     id: 535,
     answer:
-      "nulla eiusmod excepteur labore occaecat incididunt pariatur amet cupidatat sint dolor proident incididunt anim aute",
+      "It is possible to commit no mistakes and still lose. That isnot a weakness. That is life.",
     isCorrect: false,
   },
   {
     id: 536,
-    answer:
-      "incididunt quis officia laboris labore duis do nisi exercitation proident eu qui adipisicing et est",
+    answer: "Shaka, when the walls fell.",
     isCorrect: false,
   },
   {
     id: 537,
-    answer:
-      "eu ullamco occaecat velit duis esse mollit sint esse esse commodo sit culpa proident labore",
+    answer: "Temba, his arms wide.",
     isCorrect: false,
   },
   {
     id: 538,
-    answer:
-      "laborum nostrud eu sint non veniam duis occaecat esse quis officia excepteur eiusmod nisi in",
+    answer: "Without followers, evil cannot spread.",
     isCorrect: false,
   },
   {
     id: 539,
-    answer:
-      "incididunt qui veniam est exercitation reprehenderit enim aliqua ea cillum cupidatat exercitation nostrud sunt laboris",
+    answer: "Change is the essential process of all existence.",
     isCorrect: false,
   },
   {
     id: 540,
-    answer:
-      "eiusmod ea excepteur aute labore pariatur pariatur do veniam tempor sunt sit laborum dolor aliqua",
+    answer: "It is the lot of man to strive no matter how content he is.",
     isCorrect: false,
   },
   {
     id: 541,
-    answer:
-      "commodo officia consectetur non adipisicing adipisicing elit velit laboris do Lorem duis sunt laboris qui",
+    answer: "Sometimes a feeling is all we humans have to go on.",
     isCorrect: false,
   },
   {
     id: 542,
     answer:
-      "esse minim consectetur exercitation in minim sit occaecat officia culpa proident nisi irure nisi laboris",
+      "When you eliminate the impossible, whatever remains, however improbable, must be the truth.",
     isCorrect: false,
   },
   {
     id: 543,
-    answer:
-      "pariatur consequat nisi do commodo mollit do do amet tempor est cupidatat qui id ad",
+    answer: "Pain is a thing of the mind. The mind can be controlled.",
     isCorrect: false,
   },
   {
     id: 544,
     answer:
-      "qui sit proident ullamco ipsum eiusmod adipisicing sunt ex incididunt amet qui et elit cillum",
+      "Believing oneself to be perfect is often the sign of a delusional mind.",
     isCorrect: false,
   },
   {
     id: 545,
     answer:
-      "incididunt pariatur dolor adipisicing ex exercitation et amet exercitation do exercitation veniam cillum ipsum et",
+      "When the personality of a human is involved, exact predictions are hazardous.",
     isCorrect: false,
   },
   {
     id: 546,
-    answer:
-      "velit sit laborum fugiat proident et est aliquip commodo amet fugiat mollit sit commodo irure",
+    answer: "Behind every great man, there is a woman - urging him on.",
     isCorrect: false,
   },
 ];
