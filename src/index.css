@@ -135,17 +135,29 @@ body {
   );
 }
 
-.buster {
-  font-size: 1.2rem;
+.lat-img {
+  transform: rotate(-60deg);
 }
 
 .display-latinum {
   display: flex;
-  flex-wrap: nowrap;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
-  height: 50px;
+  height: auto;
   justify-content: flex-end;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+  .display-latinum {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .lat-img {
+    width: calc(100% * (1 / 5) - 10px - 1px);
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+  }
 }
 
 /* Score and Question count */

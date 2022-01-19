@@ -1,9 +1,5 @@
 import React from "react";
 
 export default function IncorrectScore() {
-  return (
-    <div>
-      <div className="latinum buster">&#x274c;</div>
-    </div>
-  );
+  return <img className="lat-img" src="bar-no.png" alt="wrong answer"></img>;
 }

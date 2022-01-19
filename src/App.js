@@ -9,7 +9,8 @@ function App() {
     <main>
       <div className="twinkling"></div>
       <section className="container">
-        <div className="div-bar command div-bar-command"></div>
+        <div className="div-bar engineering div-bar-engineering "></div>
+
         <h1 className="h1-home">
           How well do you know the Rules of Acquisition?
           <div className="div-bar science div-bar-science invert"></div>
@@ -25,8 +26,7 @@ function App() {
         </p>
       </section>
       <section className="container">
-        <div className="div-bar engineering div-bar-engineering "></div>
-
+        <div className="div-bar command div-bar-command"></div>
         {gameOver ? <GameOver /> : <Question />}
       </section>
     </main>
