@@ -9,7 +9,7 @@ export default function Score() {
         <h4 className="display-question-count-left">
           Question {questionCount} of 10
         </h4>
-        <h4 className="display-score-right">Score: {score}</h4>
+        <h4 className="display-score-right">Latinum Bars: {score}</h4>
       </div>
       <div className="display-latinum">{latinumDisplay}</div>
     </>
