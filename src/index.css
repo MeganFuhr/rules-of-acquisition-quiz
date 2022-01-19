@@ -112,6 +112,7 @@ body {
 
 .emphasis {
   font-weight: var(--fw-bold);
+  color: var(--engineering);
 }
 
 /* Latinum */

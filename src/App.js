@@ -9,10 +9,10 @@ function App() {
     <main>
       <div className="twinkling"></div>
       <section className="container">
+        <div className="div-bar command div-bar-command"></div>
         <h1 className="h1-home">
-          <div className="div-bar command div-bar-command"></div>
           How well do you know the Rules of Acquisition?
-          <div className="div-bar engineering div-bar-engineering invert"></div>
+          <div className="div-bar science div-bar-science invert"></div>
         </h1>
         <p className="p-home">
           Do you have what it takes to be a Ferengi? To navigate the Great
@@ -25,7 +25,8 @@ function App() {
         </p>
       </section>
       <section className="container">
-        <div className="div-bar science div-bar-science"></div>
+        <div className="div-bar engineering div-bar-engineering "></div>
+
         {gameOver ? <GameOver /> : <Question />}
       </section>
     </main>
