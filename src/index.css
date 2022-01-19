@@ -105,13 +105,16 @@ body {
   z-index: 3;
 } */
 
+.invert {
+  transform: scaleY(-1);
+}
+
 .engineering {
   background-color: var(--engineering);
 }
 
 .science {
   background-color: var(--science);
-  transform: scaleY(-1);
 }
 
 .command {
