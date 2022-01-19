@@ -173,7 +173,7 @@ const wrongAnswers = [
   {
     id: 533,
     answer:
-      "We often fear what we don't understand. Our best defence is knowledge.",
+      "We often fear what we don't understand. Our best defense is knowledge.",
     isCorrect: false,
   },
   {
