@@ -31,7 +31,7 @@ export default function EndGame() {
     setGameOver(false);
   };
   return (
-    <>
+    <article>
       <Score />
       <div className="div-question container div-gameover container">
         <h1>Game Over !</h1>
@@ -56,6 +56,6 @@ export default function EndGame() {
           </button>
         </div>
       </div>
-    </>
+    </article>
   );
 }

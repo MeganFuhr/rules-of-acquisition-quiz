@@ -65,7 +65,7 @@ export default function Question() {
   };
 
   return (
-    <>
+    <article>
       <div className="question-container">
         <Score />
         <div className="question-card">
@@ -84,6 +84,6 @@ export default function Question() {
           })}
         </div>
       </div>
-    </>
+    </article>
   );
 }
