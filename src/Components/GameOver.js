@@ -36,7 +36,7 @@ export default function EndGame() {
       <div className="div-question container div-gameover container">
         <h1>Game Over !</h1>
         <h1>Latinum Bars Acquired: </h1>
-        <h1 className="span-blink-score-gameover" style={{ fontSize: "5rem" }}>
+        <h1 className="blink-score-gameover" style={{ fontSize: "5rem" }}>
           {score}
         </h1>
         <div className="container-game-buttons">

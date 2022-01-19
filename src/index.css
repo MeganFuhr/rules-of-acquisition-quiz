@@ -227,7 +227,7 @@ body {
   margin: auto;
 }
 
-.span-blink-score-gameover {
+.blink-score-gameover {
   animation: blinker 1s linear infinite;
   color: var(--engineering);
 }
