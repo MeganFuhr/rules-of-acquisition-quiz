@@ -9,11 +9,11 @@ import { useGlobalContext } from "../Context";
 
 const latinum = "🟨";
 const noLatinum = "❌";
+const wrong = createCollection(wrongAnswers, 30);
+const right = createCollection(rightAnswers, 10);
+const questionStack = joinCollections(wrong, right);
 
 export default function Question() {
-  const wrong = createCollection(wrongAnswers, 30);
-  const right = createCollection(rightAnswers, 10);
-  const questionStack = joinCollections(wrong, right);
   const {
     questionCount,
     latinumDisplay,
@@ -26,6 +26,8 @@ export default function Question() {
   } = useGlobalContext();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   //get the rule number to display
+
+  console.log(questionStack);
   const ruleNumber = questionStack[currentQuestion].filter((item) => {
     return item.isCorrect === true;
   });
