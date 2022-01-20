@@ -116,25 +116,6 @@ body {
   color: var(--engineering);
 }
 
-/* Latinum */
-/* .latinum {
-  width: 25px;
-  height: 35px;
-  transform: skew(-20deg);
-  border-radius: 4px;
-  margin: 0.41rem;
-  background-image: linear-gradient(
-    to right,
-    #462523 0,
-    #cb9b51 22%,
-    #f6e27a 45%,
-    #f6f2c0 50%,
-    #f6e27a 55%,
-    #cb9b51 78%,
-    #462523 100%
-  );
-} */
-
 .lat-img {
   transform: rotate(-60deg);
 }
@@ -152,7 +133,6 @@ body {
 @media only screen and (max-width: 600px) {
   .display-latinum {
     justify-content: flex-end;
-    /* height: auto; */
   }
 }
 
@@ -161,12 +141,10 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .lat-img {
-    /* width: calc(100% * (1 / 4) - 10px - 1px); */
     padding-bottom: 0.25rem;
     padding-top: 0.25rem;
     width: auto;
-    /* height: auto; */
-    margin: 0 0 0 5%;
+    margin: 0 0 0 3%; /* needed for Galaxy 8 */
   }
 }
 
