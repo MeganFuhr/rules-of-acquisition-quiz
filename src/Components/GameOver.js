@@ -10,6 +10,7 @@ export default function EndGame() {
     setGameOver,
     score,
     latinumResults,
+    setLatinumResults,
   } = useGlobalContext();
 
   function updateClipboard(num, results) {
@@ -29,6 +30,7 @@ export default function EndGame() {
     setQuestionCount(1);
     setLatinumDisplay([]);
     setGameOver(false);
+    setLatinumResults([]);
   };
   return (
     <article>
