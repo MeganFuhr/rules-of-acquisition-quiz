@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import wrongAnswers from "../Data/wrongAnswers";
 import rightAnswers from "../Data/rightAnswers";
-import { createQuestionStack, createCollection } from "../Functions/Functions";
+import { joinCollections, createCollection } from "../Functions/Functions";
 import CorrectScore from "./CorrectScore";
 import IncorrectScore from "./IncorrectScore";
 import Score from "./Score";
 import { useGlobalContext } from "../Context";
 
-const wrong = createCollection(wrongAnswers, 30);
-const right = createCollection(rightAnswers, 10);
-const questionStack = createQuestionStack(wrong, right);
-
 const latinum = "🟨";
 const noLatinum = "❌";
 
 export default function Question() {
+  const wrong = createCollection(wrongAnswers, 30);
+  const right = createCollection(rightAnswers, 10);
+  const questionStack = joinCollections(wrong, right);
   const {
     questionCount,
     latinumDisplay,

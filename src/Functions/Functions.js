@@ -48,7 +48,7 @@ function createCollection(list, num) {
   return collection;
 }
 
-function createQuestionStack(wrong, right) {
+function joinCollections(wrong, right) {
   const questionStack = [];
   let a = 0;
   let b = 1;
@@ -67,4 +67,4 @@ function createQuestionStack(wrong, right) {
   return questionStack;
 }
 
-export { createQuestionStack, createCollection };
+export { joinCollections, createCollection };
