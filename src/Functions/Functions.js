@@ -67,4 +67,18 @@ function joinCollections(wrong, right) {
   return questionStack;
 }
 
-export { joinCollections, createCollection };
+function createQuestionStack(
+  rightCollection,
+  wrongCollection,
+  rigthtNum,
+  wrongNum
+) {
+  const wrong = createCollection(wrongCollection, wrongNum);
+  const right = createCollection(rightCollection, rigthtNum);
+  const questionStack = joinCollections(wrong, right);
+  return questionStack;
+}
+
+export { createQuestionStack, createCollection };
+//rigthtNum = 10
+//wrongNum = 30
