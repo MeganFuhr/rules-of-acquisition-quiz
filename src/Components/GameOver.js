@@ -15,13 +15,15 @@ export default function EndGame() {
 
   function updateClipboard(num, results) {
     const display = `${num}/10 \n${results.join("")}`;
-    navigator.clipboard.writeText(display).then(
-      function () {
-        //TODO ...
-      },
-      function () {
-        console.log("Clipboard set failed!");
-      }
+    navigator.clipboard.writeText("")(
+      navigator.clipboard.writeText(display).then(
+        function () {
+          //TODO ...
+        },
+        function () {
+          console.log("Clipboard set failed!");
+        }
+      )
     );
   }
 
