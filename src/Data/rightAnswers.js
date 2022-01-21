@@ -619,7 +619,7 @@ const rightAnswers = [
   },
   {
     ruleNumber: 122,
-    answer: "Never sleep with the bosses sister.",
+    answer: "Never sleep with the boss's sister.",
     isCorrect: true,
     source: '"Playing God" (DS9 episode)',
     id: 87,
