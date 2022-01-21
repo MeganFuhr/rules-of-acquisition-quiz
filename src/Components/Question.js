@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { createQuestionStack } from "../Functions/Functions";
 import wrongAnswers from "../Data/wrongAnswers";
 import rightAnswers from "../Data/rightAnswers";
-import { joinCollections, createCollection } from "../Functions/Functions";
 import CorrectScore from "./CorrectScore";
 import IncorrectScore from "./IncorrectScore";
 import Score from "./Score";
@@ -9,9 +9,9 @@ import { useGlobalContext } from "../Context";
 
 const latinum = "🟨";
 const noLatinum = "❌";
-const wrong = createCollection(wrongAnswers, 30);
-const right = createCollection(rightAnswers, 10);
-const questionStack = joinCollections(wrong, right);
+// const wrong = createCollection(wrongAnswers, 30);
+// const right = createCollection(rightAnswers, 10);
+// const questionStack = joinCollections(wrong, right);
 
 export default function Question() {
   const {
@@ -25,9 +25,14 @@ export default function Question() {
     setLatinumResults,
   } = useGlobalContext();
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  //get the rule number to display
+  const [questionStack, setQuestionStack] = useState(
+    createQuestionStack(rightAnswers, wrongAnswers, 10, 30)
+  );
 
-  console.log(questionStack);
+  //get the questions
+  // setQuestionStack(createQuestionStack(rightAnswers, wrongAnswers, 10, 30));
+
+  //get the rule number to display
   const ruleNumber = questionStack[currentQuestion].filter((item) => {
     return item.isCorrect === true;
   });
@@ -67,6 +72,7 @@ export default function Question() {
 
   return (
     <article>
+      {console.log(questionStack)}
       <div className="question-container">
         <Score />
         <div className="question-card">

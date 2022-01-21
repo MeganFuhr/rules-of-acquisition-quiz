@@ -245,5 +245,10 @@ const wrongAnswers = [
     answer: "Behind every great man, there is a woman - urging him on.",
     isCorrect: false,
   },
+  {
+    id: 547,
+    answer: "q",
+    isCorrect: false,
+  },
 ];
 export default wrongAnswers;
