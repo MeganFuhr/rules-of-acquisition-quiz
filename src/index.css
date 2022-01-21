@@ -246,3 +246,7 @@ body {
 .game-buttons:hover {
   border-color: var(--button-hover);
 }
+
+fieldset {
+  border: 0;
+}

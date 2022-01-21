@@ -75,21 +75,25 @@ export default function Question() {
       <div className="question-container">
         <Score />
         <div className="question-card">
-          <h2>Rule {ruleNumber[0].ruleNumber}</h2>
-          {questionStack[currentQuestion].map((item) => {
-            return (
-              <form>
-                <button
-                  key={item.id}
-                  className="question-answer-button"
-                  onClick={() => handleAnswer(item)}
-                  aria-label={item.answer}
-                >
-                  {item.answer}
-                </button>
-              </form>
-            );
-          })}
+          <h2 aria-label={`Rule ${ruleNumber[0].ruleNumber}`}>
+            Rule {ruleNumber[0].ruleNumber}
+          </h2>
+          <fieldset>
+            {questionStack[currentQuestion].map((item) => {
+              return (
+                <form>
+                  <button
+                    key={item.id}
+                    className="question-answer-button"
+                    onClick={() => handleAnswer(item)}
+                    aria-label={item.answer}
+                  >
+                    {item.answer}
+                  </button>
+                </form>
+              );
+            })}
+          </fieldset>
         </div>
       </div>
     </article>
