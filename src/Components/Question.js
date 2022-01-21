@@ -78,14 +78,16 @@ export default function Question() {
           <h2>Rule {ruleNumber[0].ruleNumber}</h2>
           {questionStack[currentQuestion].map((item) => {
             return (
-              <button
-                key={item.id}
-                className="question-answer-button"
-                onClick={() => handleAnswer(item)}
-                aria-label={item.answer}
-              >
-                {item.answer}
-              </button>
+              <form>
+                <button
+                  key={item.id}
+                  className="question-answer-button"
+                  onClick={() => handleAnswer(item)}
+                  aria-label={item.answer}
+                >
+                  {item.answer}
+                </button>
+              </form>
             );
           })}
         </div>
