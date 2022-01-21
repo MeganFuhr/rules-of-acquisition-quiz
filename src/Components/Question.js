@@ -29,9 +29,6 @@ export default function Question() {
     createQuestionStack(rightAnswers, wrongAnswers, 10, 30)
   );
 
-  //get the questions
-  // setQuestionStack(createQuestionStack(rightAnswers, wrongAnswers, 10, 30));
-
   //get the rule number to display
   const ruleNumber = questionStack[currentQuestion].filter((item) => {
     return item.isCorrect === true;
@@ -42,6 +39,9 @@ export default function Question() {
     setQuestionCount((prev) => {
       if (questionCount === 10) {
         setGameOver(true);
+        setQuestionStack(
+          createQuestionStack(rightAnswers, wrongAnswers, 10, 30)
+        );
         return 10;
       }
       return prev + 1;
@@ -72,7 +72,6 @@ export default function Question() {
 
   return (
     <article>
-      {console.log(questionStack)}
       <div className="question-container">
         <Score />
         <div className="question-card">
