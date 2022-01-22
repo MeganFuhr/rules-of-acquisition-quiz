@@ -7,6 +7,7 @@ function App() {
   const { gameOver } = useGlobalContext();
   return (
     <main>
+      {console.log(Math.floor(new Date().getTime() / 1000))}
       <div className="twinkling"></div>
       <section className="container">
         <div className="div-bar engineering div-bar-engineering "></div>

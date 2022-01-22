@@ -9,9 +9,6 @@ import { useGlobalContext } from "../Context";
 
 const latinum = "🟨";
 const noLatinum = "❌";
-// const wrong = createCollection(wrongAnswers, 30);
-// const right = createCollection(rightAnswers, 10);
-// const questionStack = joinCollections(wrong, right);
 
 export default function Question() {
   const {
@@ -39,9 +36,7 @@ export default function Question() {
     setQuestionCount((prev) => {
       if (questionCount === 10) {
         setGameOver(true);
-        setQuestionStack(
-          createQuestionStack(rightAnswers, wrongAnswers, 10, 30)
-        );
+
         return 10;
       }
       return prev + 1;
@@ -63,6 +58,10 @@ export default function Question() {
     //display new question
     setCurrentQuestion((prev) => {
       if (prev + 1 === 10) {
+        setQuestionStack(
+          createQuestionStack(rightAnswers, wrongAnswers, 10, 30)
+        );
+
         return 10;
       }
       return prev + 1;
