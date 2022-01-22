@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Score from "./Score";
 import { useGlobalContext } from "../Context";
 
 export default function EndGame() {
+  const [clipboardConfirm, setClipboardConfirm] = useState("Share Results");
+
   const {
     setScore,
     setQuestionCount,
@@ -18,7 +20,7 @@ export default function EndGame() {
     navigator.clipboard.writeText("").then(
       navigator.clipboard.writeText(display).then(
         function () {
-          //TODO ...
+          setClipboardConfirm("In Clipboard!");
         },
         function () {
           console.log("Clipboard set failed!");
@@ -53,10 +55,10 @@ export default function EndGame() {
           </button>
           <button
             className="game-buttons"
-            aria-label="Share Results"
+            aria-label={clipboardConfirm}
             onClick={() => updateClipboard(score, latinumResults)}
           >
-            Share Results
+            {clipboardConfirm}
           </button>
         </div>
       </div>
