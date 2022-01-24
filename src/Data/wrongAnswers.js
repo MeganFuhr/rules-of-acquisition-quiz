@@ -184,7 +184,7 @@ const wrongAnswers = [
   {
     id: 535,
     answer:
-      "It is possible to commit no mistakes and still lose. That isnot a weakness. That is life.",
+      "It is possible to commit no mistakes and still lose. That is not a weakness. That is life.",
     isCorrect: false,
   },
   {
