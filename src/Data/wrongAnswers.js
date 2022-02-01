@@ -156,7 +156,7 @@ const wrongAnswers = [
   },
   {
     id: 530,
-    answer: "One voice can be strong than a thousand voices.",
+    answer: "One voice can be stronger than a thousand voices.",
     isCorrect: false,
   },
   {
